@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bookiee</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+
+    <div class="nav">
+        <h1>Bookiee</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Memoirs of Sherlock Holmes</h2>
+            <h5>Sir Arthur Conan Doyle</h5>
+            <p>The Memoirs of Sherlock Holmes is a collection of short stories by British writer Arthur Conan Doyle, first published late in 1893 with 1894 date.[1] It was first published in the UK by G. Newnes Ltd., and was published in the US by Harper & Brothers in February 1894.[2] It was the second collection featuring the consulting detective Sherlock Holmes, following The Adventures of Sherlock Holmes. Like the first it was illustrated by Sidney Paget.
+
+                The twelve stories were originally published in The Strand Magazine from December 1892 to December 1893 as The Adventures number 13 to 24. For instance, "The Final Problem" was published under the subheading "XXIV.—The Adventure of the Final Problem."[3] In the United States, the stories were first published in Harper's Weekly, except for "The Final Problem," which appeared in McClure's Magazine.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+
+        <button  id="addbtn">+</button>
+
+        <div class="popup-overlay"></div>
+        <div class="popup-window">
+            <h2>Add Book</h2>
+            <form>
+            <input type="text" id="bookname" placeholder="Book Name">
+            <input type="text" id="Authorname" placeholder="Author Name">
+            <textarea id="bookdescription" placeholder="Description"></textarea>
+            <button id="addbook">Add</button>
+            <button id="cancelpopup">Cancel</button>
+        </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>

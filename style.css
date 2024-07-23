@@ -1,0 +1,140 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+ 
+.nav{
+    background-color: rgb(224, 148, 148);
+    
+    top:0px;
+    left:0px;
+    padding:15px;
+    
+}
+
+.book-container{
+    width:600px;
+    border-radius: 9px;
+    padding:30px;
+    margin:30px;
+    background-color:  black;
+    color:rgb(224, 148, 148);
+    box-shadow: 0 0 9px rgb(34, 33, 33);
+    display:inline-block;
+    
+    vertical-align: top;
+    
+
+}
+.box-container h2,h5{
+    padding-bottom:10px;
+}
+button{
+    background-color: rgb(224, 148, 148);
+    color: rgb(8, 8, 8);
+    border:none;
+    border-radius: 7px;
+    padding:7px;
+    margin-top: 10px;
+    cursor:pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: rgb(235, 176, 176);
+}
+#addbtn{
+    border:none;
+    background-color: rgb(224, 148, 148);
+    color: black;
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    border-radius: 100%;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 40px;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow: 0 0 10px rgb(117, 114, 114);
+
+}
+#addbtn:hover{
+    background-color: rgb(235, 129, 129);
+    
+}
+
+.popup-overlay{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity:0.8;
+    z-index: 1;
+    top:0;
+    left:0;
+    display:none;
+}
+
+.popup-window{
+    background-color: rgba(247, 203, 203, 0.918);
+    color:rgb(78, 76, 76);
+    border-radius: 10px;
+    top:20%;
+    left:30%;
+    padding:40px;
+    
+    width:40%;
+    z-index: 2;
+    position:absolute;
+    display: none;
+  }
+
+  .popup-window input{
+    border-radius: 3px;
+    background-color: rgba(231, 216, 216, 0.932);
+    margin:5px;
+    color: black;
+    width: 100%;
+    height:30px;
+    border:none;
+    
+    padding:5px;
+  }
+
+  .popup-window textarea{
+    border-radius: 3px;
+    background-color: rgba(231, 216, 216, 0.932);
+    margin:5px;
+    color: black;
+    width: 100%;
+    height:70px;
+    border:none;
+    font-family: "poppins";
+    
+    padding:5px;
+
+  }
+
+  .popup-window ::placeholder{
+    color:black
+  }
+  .popup-window button{
+    margin-top: 30px;
+    margin-left:25%;
+    width: 10%;
+    
+  }
+
+  .popup-window :focus{
+    outline: none;
+  }
